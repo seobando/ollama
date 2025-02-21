@@ -1,0 +1,21 @@
+{
+    "name": "Dev Ollama",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "remoteUser": "vscode",
+    "customizations": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "vscode": {
+            "settings": {
+                "extensions.verifySignature": false,
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy"
+            ]
+        }
+    }
+}
